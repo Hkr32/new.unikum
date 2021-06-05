@@ -11,6 +11,17 @@ export default {
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      {
+        id: 'amoforms_script',
+        src: 'https://forms.amocrm.ru/forms/assets/js/amoforms.js',
+        async: true,
+      },
+      {
+        innerHTML:
+          'var amo_forms_params = {id: 54276, hash: "e8ace50b16db1e3728ca315592088bc1", locale: "ru"};',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -40,13 +51,17 @@ export default {
     '@nuxtjs/pwa',
   ],
 
+  bootstrapVue: {
+    icons: true,
+  },
+
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en',
+      lang: 'ru',
     },
   },
 
