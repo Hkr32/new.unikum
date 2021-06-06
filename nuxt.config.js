@@ -13,13 +13,14 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
       {
-        id: 'amoforms_script',
-        src: 'https://forms.amocrm.ru/forms/assets/js/amoforms.js',
-        async: true,
+        innerHTML:
+          '!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"792208",hash:"843311b1b19680831ec947a9682866d9",locale:"ru"})}(window,0,"amo_forms_","params","load");',
       },
       {
-        innerHTML:
-          'var amo_forms_params = {id: 54276, hash: "e8ace50b16db1e3728ca315592088bc1", locale: "ru"};',
+        id: 'amoforms_script_792208',
+        src: 'https://forms.amocrm.ru/forms/assets/js/amoforms.js?1622968651',
+        async: true,
+        charset: 'utf-8',
       },
     ],
   },
